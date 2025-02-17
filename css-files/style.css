@@ -54,7 +54,7 @@ main {
 }
 
 #landing-image {
-  background:url(/img/img1.jpeg);
+  background:url(img1.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,23 +111,24 @@ footer h3 {
 }
 
 @media (min-width: 500px) {
-  #landing {
-    display: flex;
-    height: 100%;
+    #landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    #landing-text {
+      height: 100vh;
+    }
+  
+    #landing-image {
+      height: 100vh;
+    }
   }
-
-  #landing-text {
-    height: 100vh;
+  
+  
+  @media (min-width: 700px) {
+    .btn {
+      padding: 1rem 3rem;
+    }
   }
-
-  #landing-image {
-    height: 100vh;
-  }
-}
-
-
-@media (min-width: 700px) {
-  .btn {
-    padding: 1rem 3rem;
-  }
-}
+  
